@@ -1,4 +1,5 @@
 class Rating_Dataset(torch.utils.data.Dataset):
+	
 	def __init__(self, user_list, item_list, rating_list):
 		super(Rating_Datset, self).__init__()
 		self.user_list = user_list
