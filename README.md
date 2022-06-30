@@ -56,11 +56,11 @@
 
 
 <!-- ABOUT THE Paper -->
-## About The Paper
+## About
 
+Consider the following image:
+<img width="283" alt="mf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/mf.png>
 
-
-Layer-wise Relevance Propagation (LRP) is a technique that adds explainability to prediction of complicated deep neural networks .
 LRP works by propagating the prediction (say f(x))  backwards in the neural network using specially developed local propagation rules.
 In general, LRP's propagation technique is subject to a conservation property, which states that what a neuron receives must be transferred in an equivalent proportion to the bottom layer.
 
