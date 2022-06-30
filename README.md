@@ -119,25 +119,14 @@ __Neural Collaborative Filtering__
 
 <img width="650" alt="ncf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/ncf.png">
 
-So above is the final model proposed looks like this, it contains two sub modules, in order to introduce more non-linearity they includes a multi-layer perceptron model here in addition to original generalized material factorization layer and they fused these models with a concatenation layer followed by a sigmoid activation function.
+So above is the final model proposed, it contains two sub modules, in order to introduce more non-linearity they includes a multi-layer perceptron model here in addition to original generalized material factorization layer and they fused these models with a concatenation layer followed by a sigmoid activation function.
 
-We have implemented it in pytorch and have using Movie-lense dataset and book-crossing dataset for training and testing.
+We have implemented it in pytorch and have used Movie-lense dataset and book-crossing dataset for training and testing.
 
 
 ## Results
-
-We used the following color spectrum to visualize our LRP explanations; the more the color is from the right side of the spectrum, the higher the contribution of that word to sentence label prediction (hate or not-hate).
-<img width="650" alt="spectrum" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/spectrum.png">
-
-
-__example1__: 
-<br/>
-<img width="650" alt="results_example1" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/results_example1.png">
-<br/>
-
-__example2__: 
-<br/>
-<img width="650" alt="results_example1" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/results_example2.png">
+Following table shows results of our model on different datasets.
+<img width="650" alt="ncf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/results.png">
 
 
 <!-- USAGE EXAMPLES -->
