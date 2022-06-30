@@ -43,11 +43,11 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Paper</a>
+      <a href="#Traditional MF">About The Paper</a>
     </li>
-    <li><a href="#Implementation">Implementation</a></li>
-    <li><a href="#Results">Results</a></li>
-    <li><a href="#Applications">Applications</a></li>
+    <li><a href="#Problem in traditional MF">Implementation</a></li>
+    <li><a href="#Implementation">Results</a></li>
+    <li><a href="#Results">Applications</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -136,6 +136,7 @@ Following table shows results of our model on different datasets.
 <!-- CONTACT -->
 ## Contacts
 [LinkedIn](https://www.linkedin.com/in/ajeet-yadav-a507971a9/)
+<br/>
 [Twitter](https://twitter.com/weightsNbiases)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
