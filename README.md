@@ -97,7 +97,7 @@ The example shows the incompetence of inner product in bottling a complex intera
 
 
 ## Implementation
-__GENERALIZED MATRIX FACTORIZATION__ :
+__GENERALIZED MATRIX FACTORIZATION__
 
 Following the GMF architecture proposed by authors. 
 
@@ -108,6 +108,9 @@ Following the GMF architecture proposed by authors.
 We can see that  both the user and item are one hot encoded and then they are projected onto the latent space with an embedded layer.
  The neural CF layers basically can be any kind of neural connections, multiple layer perceptron for instance can be placed here.
  The paper claim that with the complicated connection in these layers and the non-linearity,  this model is capable of learning the user and item interactions in latent space properly.
+
+The authors also showed how matrix factorization is a special case of  GMF,
+if we replace the new CF layers here with a multiplication layer which performs element-wise product on its two inputs and if we also set the weights from the multiplication layer to the output layer to be a unity matrix and if we set the activation function of the output layer to be a linear function. Then this GMF becomes traditional MF.
 
 
 
