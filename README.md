@@ -43,9 +43,9 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Traditional MF">About The Paper</a>
+      <a href="#Traditional MF">Traditional MF</a>
     </li>
-    <li><a href="#Problem in traditional MF">Implementation</a></li>
+    <li><a href="#Problem in traditional MF">Problem in traditional MF</a></li>
     <li><a href="#Implementation">Results</a></li>
     <li><a href="#Results">Applications</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -139,13 +139,10 @@ Following table shows results of our model on different datasets.
 <br/>
 [Twitter](https://twitter.com/weightsNbiases)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [Neural Collaborative Filtering](https://dl.acm.org/doi/10.1145/3038912.3052569)
-
 
 <p align="right">(<a href="#top">back to top</a>)</p> 
 
