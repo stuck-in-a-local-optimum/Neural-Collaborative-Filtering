@@ -101,7 +101,7 @@ __GENERALIZED MATRIX FACTORIZATION__
 
 Following the GMF architecture proposed by authors. 
 
-<img width="650" alt="mf_example" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/gmf.png">
+<img width="650" alt="gmf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/gmf.png">
 
 
 
@@ -110,9 +110,13 @@ We can see that  both the user and item are one hot encoded and then they are pr
  The paper claim that with the complicated connection in these layers and the non-linearity,  this model is capable of learning the user and item interactions in latent space properly.
  
 
-<img width="650" alt="mf_example" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/gmf2.png">
+<img width="650" alt="gmf2" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/gmf2.png">
 The authors also showed how matrix factorization is a special case of GMF,
 if we replace the new CF layers here with a multiplication layer which performs element-wise product on its two inputs and if we also set the weights from the multiplication layer to the output layer to be a unity matrix and if we set the activation function of the output layer to be a linear function. Then this GMF becomes traditional MF.
+
+__Neural Collaborative Filtering__
+
+<img width="650" alt="ncf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/ncf.png">
 
 
 
