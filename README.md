@@ -24,12 +24,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">Layerwise Relevance Backpropagation</h3>
+  <h3 align="center">Neural Collaborative Filtering</h3>
 
   <p align="center">
-    A research project to implement Relevance Back Propagation to explain the predictions of a hate speech detection model built on fine tuning XLM-roberta from Hugging-Face!
+    Implementation of this WWW'17 conference's research paper on Nueral Collaborative Filtering architecture, which proposed use of deep-learning to fix the incompetence of traditional Matrix Factorization for a recommender-system!
     
-  _Disclaimer:_ The result section of the readme contains our results on text examples that may be considered profane, vulgar, or offensive.
 
     
 <br/>
@@ -44,10 +43,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#about-the-project">About The Paper</a>
     </li>
     <li><a href="#Implementation">Implementation</a></li>
     <li><a href="#Results">Results</a></li>
@@ -59,8 +55,8 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- ABOUT THE Paper -->
+## About The Paper
 
 
 
