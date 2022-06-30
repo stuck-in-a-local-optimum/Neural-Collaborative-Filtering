@@ -56,7 +56,7 @@
 
 
 <!-- ABOUT THE Paper -->
-## About
+## Traditional MF
 
 Consider the utility matrix in the following image:
 
@@ -71,6 +71,7 @@ The traditional way to solve the recommender system problem is to decompose this
 And for prediction we simply multiply these two sub matrices to reconstruct the utility matrix and the larger the value on these unobserved entries the more likely that the corresponding user is going to interact with the corresponding item.
 This utility matrix is factorized in such a way that the loss or the difference between the reconstructed matrix and the true utility matrix is minimized.
 
+## Problem in traditional MF
 
 Essentially what matrix factorization does is that it projects each of the user and item onto a Latin space of size K so if user items are represented by K dimension Latent vectors we can measure the similarity between each Latent vector by computing a dot product.
 
