@@ -57,7 +57,7 @@ class NeuMF(nn.Module):
             mlp_vector = self.bilinear1(user_embedding_mlp, item_embedding_mlp)
 
         mf_vector =torch.mul(user_embedding_mf, item_embedding_mf)
-        # print(mlp_vector.shape, user_embedding_mf.shape, item_embedding_mf.shape, mf_vector.shape)
+
 
         for idx, _ in enumerate(range(len(self.fc_layers))):
             mlp_vector = self.fc_layers[idx](mlp_vector)
