@@ -79,6 +79,9 @@ Essentially what matrix factorization does is that it projects each of the user 
 In fact for prediction we're computing the dot product of each of the user Latin vectors and the item Latin vectors.
  However the paper argued that inner products limit the expressiveness of latent vectors.
 
+To understand the problem, let us consider following image:
+<img width="650" alt="mf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/mf_example.png">
+
 
 
 
