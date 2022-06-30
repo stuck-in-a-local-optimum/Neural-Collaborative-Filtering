@@ -27,7 +27,7 @@
   <h3 align="center">Neural Collaborative Filtering</h3>
 
   <p align="center">
-    Implementation of [this] (https://dl.acm.org/doi/10.1145/3038912.3052569) WWW'17 conference's research paper on Neural Collaborative Filtering architecture, which proposed use of deep-learning to fix the incompetence of traditional Matrix Factorization for a recommender-system!
+    Implementation of [this](https://dl.acm.org/doi/10.1145/3038912.3052569) WWW'17 conference's research paper on Neural Collaborative Filtering architecture, which proposed use of deep-learning to fix the incompetence of traditional Matrix Factorization for a recommender-system!
     
 
     
@@ -129,18 +129,9 @@ Following table shows results of our model on different datasets.
 <img width="650" alt="ncf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/results.png">
 
 
-<!-- USAGE EXAMPLES -->
-## Applications
-
-LRP can be used for a variety of purposes, some of which are as follows:
-
-Let’s say our network predicts a cancer diagnosis based on a mammogram (a breast tissue image), the explanation provided by LRP would be a map showing which pixels in the original image contribute to the diagnosis and to what amount. Because this approach does not interfere with network training, it can be used on already trained classifiers.
-
-XML methods are especially useful in safety-critical domains where practitioners must know exactly what the network is paying attention to.  Other use-cases include network (mis)behavior diagnostics, scientific discovery, and network architectural improvement.
 
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contacts
@@ -152,7 +143,7 @@ XML methods are especially useful in safety-critical domains where practitioners
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [The Paper](https://dl.acm.org/doi/10.1145/3038912.3052569)
+* [Neural Collaborative Filtering](https://dl.acm.org/doi/10.1145/3038912.3052569)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
