@@ -27,7 +27,7 @@
   <h3 align="center">Neural Collaborative Filtering</h3>
 
   <p align="center">
-    Implementation of [thids](https://dl.acm.org/doi/10.1145/3038912.3052569) WWW'17 conference's research paper on Neural Collaborative Filtering architecture, which proposed use of deep-learning to fix the incompetence of traditional Matrix Factorization for a recommender-system!
+    Implementation of a [Neural Collaborative Filtering](https://dl.acm.org/doi/10.1145/3038912.3052569) WWW'17 conference's research paper on Neural Collaborative Filtering architecture, which proposed use of deep-learning to fix the incompetence of traditional Matrix Factorization for a recommender-system!
     
 
     
