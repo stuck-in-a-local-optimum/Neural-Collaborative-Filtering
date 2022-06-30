@@ -72,6 +72,14 @@ And for prediction we simply multiply these two sub matrices to reconstruct the 
 This utility matrix is factorized in such a way that the loss or the difference between the reconstructed matrix and the true utility matrix is minimized.
 
 
+Essentially what matrix factorization does is that it projects each of the user and item onto a Latin space of size K so if user items are represented by K dimension Latent vectors we can measure the similarity between each Latent vector by computing a dot product.
+
+
+In fact for prediction we're computing the dot product of each of the user Latin vectors and the item Latin vectors.
+ However the paper argued that inner products limit the expressiveness of latent vectors.
+
+
+
 
 <!-- <img width="283" alt="lrp-basic-rule" src="https://user-images.githubusercontent.com/55681180/176441874-724b94bf-1c74-4724-9dde-c6bf1dd484cf.png"> -->
 
