@@ -27,7 +27,7 @@
   <h3 align="center">Neural Collaborative Filtering</h3>
 
   <p align="center">
-    Implementation of this WWW'17 conference's research paper on Neural Collaborative Filtering architecture, which proposed use of deep-learning to fix the incompetence of traditional Matrix Factorization for a recommender-system!
+    Implementation of [this] (https://dl.acm.org/doi/10.1145/3038912.3052569) WWW'17 conference's research paper on Neural Collaborative Filtering architecture, which proposed use of deep-learning to fix the incompetence of traditional Matrix Factorization for a recommender-system!
     
 
     
@@ -152,8 +152,8 @@ XML methods are especially useful in safety-critical domains where practitioners
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [InDepth: Layer-Wise Relevance Propagation](https://towardsdatascience.com/indepth-layer-wise-relevance-propagation-340f95deb1ea)
-* [Layer-Wise Relevance Propagation: An Overview](https://link.springer.com/chapter/10.1007/978-3-030-28954-6_10)
+* [The Paper](https://dl.acm.org/doi/10.1145/3038912.3052569)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
