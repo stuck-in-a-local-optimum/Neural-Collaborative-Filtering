@@ -63,10 +63,12 @@ Consider the utility matrix in the following image:
 <img width="650" alt="mf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/mf.png">
 
 The entry 1 in the above utility matrix is observed interaction because we know that this user has interacted with this item before and for the 0 entry we call it unobserved interaction since we are not sure if this user will interact with this item in the future or not. <br/>
+
 Now, What we want to know is among all the unobserved interaction items which of them the user are most likely to interact with.
 <br/>
+
 The traditional way to solve the recommender system problem is to decompose this user and item matrix aka unitarity matrix into two sub matrices: the user matrix and the item matrix. 
-For prediction we simply multiply these two sub matrices to reconstruct the utility matrix and the larger the value on these unobserved entries the more likely that the corresponding user is going to interact with the corresponding item.
+And for prediction we simply multiply these two sub matrices to reconstruct the utility matrix and the larger the value on these unobserved entries the more likely that the corresponding user is going to interact with the corresponding item.
 This utility matrix is factorized in such a way that the loss or the difference between the reconstructed matrix and the true utility matrix is minimized.
 
 
