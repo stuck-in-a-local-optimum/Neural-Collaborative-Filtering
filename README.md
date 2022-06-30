@@ -46,9 +46,9 @@
       <a href="#Traditional MF">Traditional MF</a>
     </li>
     <li><a href="#Problem in traditional MF">Problem in traditional MF</a></li>
-    <li><a href="#Implementation">Results</a></li>
-    <li><a href="#Results">Applications</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#Implementation">Implementation</a></li>
+    <li><a href="#Results">Results</a></li>
+    <li><a href="#contact">Contacts</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
