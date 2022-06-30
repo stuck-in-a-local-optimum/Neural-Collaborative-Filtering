@@ -80,9 +80,18 @@ In fact for prediction we're computing the dot product of each of the user Latin
  However the paper argued that inner products limit the expressiveness of latent vectors.
 
 To understand the problem, let us consider following image:
-<img width="650" alt="mf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/mf_example.png">
+<img width="650" alt="mf_example" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/mf_example.png">
 
 
+Let us first focus on the top three rows of this utility matrix, by computing the cosine similarity between these vectors, we know that user-2 and user-3 are most similar  and user 1 and 3 are least similar.
+
+
+We now project these users onto the latent-space of dimension-2, since user-2 and user-3 are the most similar they are close to each other while user-1 and user-3 are least similar so they are far from each other.
+
+ Now we consider user 4 while computing the similarity between user-4  and the others. We know that user 1 is the most similar with user-4 while user-2 is least similar.
+ 
+ 
+ However here's where the problem comes in, no matter how we place user-4 around user-1 user 3 ends up being the farthest from user-4 while in reality user-2 is the most different from user-4 not user-3.W
 
 
 <!-- <img width="283" alt="lrp-basic-rule" src="https://user-images.githubusercontent.com/55681180/176441874-724b94bf-1c74-4724-9dde-c6bf1dd484cf.png"> -->
