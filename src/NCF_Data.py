@@ -1,6 +1,6 @@
 class NCF_Data(object):
 	"""
-	Construct Dataset for NCF
+	 Construct Dataset for NCF
 	"""
 	def __init__(self, params, ratings):
 		self.ratings = ratings
