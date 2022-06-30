@@ -1,4 +1,5 @@
 class Generalized_Matrix_Factorization(nn.Module):
+    
     def __init__(self, params, num_users, num_items):
         super(Generalized_Matrix_Factorization, self).__init__()
         self.num_users = num_users
