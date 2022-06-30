@@ -83,10 +83,7 @@ To understand the problem, let us consider following image:
 <img width="650" alt="mf_example" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/mf_example.png">
 
 
-Let us first focus on the top three rows of this utility matrix, by computing the cosine similarity between these vectors, we know that user-2 and user-3 are most similar  and user 1 and 3 are least similar.
-
-
-We now project these users onto the latent-space of dimension-2, since user-2 and user-3 are the most similar they are close to each other while user-1 and user-3 are least similar so they are far from each other.
+Let us first focus on the top three rows of this utility matrix, by computing the cosine similarity between these vectors, we know that user-2 and user-3 are most similar  and user 1 and 3 are least similar. We now project these users onto the latent-space of dimension-2, since user-2 and user-3 are the most similar they are close to each other while user-1 and user-3 are least similar so they are far from each other.
 
  Now we consider user 4 while computing the similarity between user-4  and the others. We know that user 1 is the most similar with user-4 while user-2 is least similar.
  
@@ -100,12 +97,18 @@ The example shows the incompetence of inner product in bottling a complex intera
 
 
 ## Implementation
-We first built a hate-speech detection model trained on Indian languages using XLM-Roberta from Hugging Face and used it to explain its prediction using the LRP described above.
+__GENERALIZED MATRIX FACTORIZATION__ :
 
-The structure of LRP rules enables us to implement them in a simple and efficient manner and the implementation have  following major 4 steps:
+Following the GMF architecture proposed by authors. 
 
-<img width="650" alt="psuedo_code" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/psuedo_code.png">
-<br/>
+<img width="650" alt="mf_example" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/gmf.png">
+
+
+
+We can see that  both the user and item are one hot encoded and then they are projected onto the latent space with an embedded layer.
+ The neural CF layers basically can be any kind of neural connections, multiple layer perceptron for instance can be placed here.
+ The paper claim that with the complicated connection in these layers and the non-linearity,  this model is capable of learning the user and item interactions in latent space properly.
+
 
 
 ## Results
