@@ -147,7 +147,7 @@ Following table shows results of our model on different datasets.
 * [Neural Collaborative Filtering](https://dl.acm.org/doi/10.1145/3038912.3052569)
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p> 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
