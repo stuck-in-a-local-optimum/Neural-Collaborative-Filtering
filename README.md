@@ -92,61 +92,12 @@ We now project these users onto the latent-space of dimension-2, since user-2 an
  
  
  However here's where the problem comes in, no matter how we place user-4 around user-1 user 3 ends up being the farthest from user-4 while in reality user-2 is the most different from user-4 not user-3.W
-
-
-<!-- <img width="283" alt="lrp-basic-rule" src="https://user-images.githubusercontent.com/55681180/176441874-724b94bf-1c74-4724-9dde-c6bf1dd484cf.png"> -->
-
-
-
-Illustration of the LRP procedure:
-
-<img width="650" alt="lrp-basic-rule" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/lrp_illustration.png">
-
-
-Let j and k represent neurons in two successive layers, say layer ‘p’ and ‘q’ in the above neural network. The rule  to back- propagate relevance scores R_k from layer ‘q’ to neurons ‘j’ in the previous layer ‘q’  is the following:
-
- <p align="center">
-<img width="200" alt="lrp-basic-rule" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/lrp-basic-rule.png">
- <p/>
-
-
-Note: Here the index of upper summation, i.e., “j”  represents neurons of previous layer  “p” where relevance had to reach from neuron ‘k” of layer “q” by back propagating.
-
-And  zjk represents the extent to which neuron j in the layer ‘n’ has contributed to the R_k, the relevance of neuron k from the layer ‘q’. The conservation property was maintained by the denominator term. Once the input features are reached, the propagation procedure ends.
-
-
-Following are the three variants of LRP propagation rules:
-__1) Basic LRP (LRP-0):__  This rule redistributes in proportion to the contributions of each input to the neuron activation as they occur in Eq.	
-
-
-<img width="650" alt="lrp-basic-rule" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/lrp_rule0.png">
-
-__2) Epsilon Rule (LRP-ε):__  A first enhancement of the basic LRP-0 rule consists of adding a small positive term “ε” in the denominator:
-When the contributions to the activation of neuron k are weak or inconsistent, the role of “ε” is to absorb some importance. Only the most important explanation components survive absorption as they grow larger. This usually results in explanations that are less noisy and have fewer input features.
-
-<img width="650" alt="lrp-rule-epsilon" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/lrp-rule-epsilon.png">
-
-
-
-
-__3) Gamma Rule (LRP-γ):__ Another enhancement which the author have introduced is obtained by favoring the effect of positive contributions over negative contributions. 
- The parameter “ γ” determines how much positive contributions are preferred. As grows, negative influences begin to fade. The prevalence of positive contributions limits the size of positive and negative relevance that can grow throughout the propagation phase. This contributes to more consistent explanations.
- 
- <img width="650" alt="lrp-rule-gamma" src="https://github.com/stuck-in-a-local-optimum/Layerwise-Relevance-Back-Propagation/blob/master/images/lrp-rule-gamma.png">
- <br />
  
 
-<!-- Use the `BLANK_README.md` to get started.
+The example shows the incompetence of inner product in bottling a complex interaction between user latent vectors and item latent vectors, so the paper proposed a new neural architecture calling it neural collaborative filtering.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
- -->
-### Built With
 
-* [PyTorch](https://pytorch.org/)
-* [XLM-Roberta](https://huggingface.co/docs/transformers/model_doc/xlm-roberta)
-* [HuggingFace](https://huggingface.co/)
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Implementation
 We first built a hate-speech detection model trained on Indian languages using XLM-Roberta from Hugging Face and used it to explain its prediction using the LRP described above.
