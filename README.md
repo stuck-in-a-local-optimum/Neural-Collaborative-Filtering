@@ -114,10 +114,14 @@ We can see that  both the user and item are one hot encoded and then they are pr
 The authors also showed how matrix factorization is a special case of GMF,
 if we replace the new CF layers here with a multiplication layer which performs element-wise product on its two inputs and if we also set the weights from the multiplication layer to the output layer to be a unity matrix and if we set the activation function of the output layer to be a linear function. Then this GMF becomes traditional MF.
 
+
 __Neural Collaborative Filtering__
 
 <img width="650" alt="ncf" src="https://github.com/stuck-in-a-local-optimum/Nueral-Collaborative-Filtering/blob/main/images/ncf.png">
 
+So above is the final model proposed looks like this, it contains two sub modules, in order to introduce more non-linearity they includes a multi-layer perceptron model here in addition to original generalized material factorization layer and they fused these models with a concatenation layer followed by a sigmoid activation function.
+
+We have implemented it in pytorch and have using Movie-lense dataset and book-crossing dataset for training and testing.
 
 
 ## Results
