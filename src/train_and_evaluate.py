@@ -89,7 +89,6 @@ def metrics(model, test_loader, top_k, device):
 		user = user.to(device)
 		item = item.to(device)
   
-		# print(user, item) # Torch tensors of the dimension num_ng_test+1 (number of negative samples and 1 positive) (user list has the same user, items are different)
 
 		predictions = model(user, item)
   
