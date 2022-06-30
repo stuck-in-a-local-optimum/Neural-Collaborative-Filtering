@@ -23,8 +23,7 @@ class Multi_Layer_Perceptron(nn.Module):
         for idx, _ in enumerate(range(len(self.fc_layers))):
             vector = self.fc_layers[idx](vector)
             vector = nn.ReLU()(vector)
-            # vector = nn.BatchNorm1d()(vector)
-            # vector = nn.Dropout(p=0.5)(vector)
+
         logits = self.affine_output(vector)
         rating = self.logistic(logits)
         return rating
